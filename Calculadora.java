@@ -1,7 +1,11 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+Proyecto: Calculadora Windows 
+Proyecto de MPDS
+Fecha de inicio: 18/07/2024
+Fecha de finalizacion: Jueves 22 de Agosto del 2024
+Fecha de entrega: Jueves 22 de Agosto del 2024
  */
+
 package calculadora;
 
 /**hhhhggffgfgfgfgf
