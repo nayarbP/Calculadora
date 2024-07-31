@@ -5,14 +5,14 @@ import java.util.regex.Pattern;
 
 public class OperacionesBasicas{
     //Función main provisional
-    public static void main(String [] args){
+    /*public static void main(String [] args){
         //String expresion = "operacion a resolver";
         String expresion = "5+34/4-4/0";
         double resultado = calcularexpresion(expresion);
         if (!Double.isNaN(resultado)) {
             System.out.println("Resultado: " + resultado);
         }
-    }
+    }*/
   
     public static double calcularexpresion(String expresion){
         // Aquí se tomará el string de operaciones y se llevarán a las funciones correspondientes
@@ -22,7 +22,7 @@ public class OperacionesBasicas{
         Pattern pattern = Pattern.compile("(\\d+\\.?\\d*)([*/])(\\d+\\.?\\d*)");
         Matcher matcher = pattern.matcher(expresion);
         while (matcher.find()) {
-            System.out.println("Expresión: " + expresion); // imprime el proceso de la expresión, opcional
+            //System.out.println("Expresión: " + expresion); // imprime el proceso de la expresión, opcional
             String operador0 = "";
             double valor1 = Double.parseDouble(matcher.group(1));
             String operador = matcher.group(2);
@@ -38,7 +38,7 @@ public class OperacionesBasicas{
         pattern = Pattern.compile("([-])(\\d+\\.?\\d*)([*/])(\\d+\\.?\\d*)");
         matcher = pattern.matcher(expresion);
         while (matcher.find()) {
-            System.out.println("Expresión: " + expresion); // imprime el proceso de la expresión, opcional
+            //System.out.println("Expresión: " + expresion); // imprime el proceso de la expresión, opcional
             String operador0 = matcher.group(1);
             double valor1 = Double.parseDouble(matcher.group(2));
             String operador = matcher.group(3);
@@ -54,7 +54,7 @@ public class OperacionesBasicas{
         pattern = Pattern.compile("([-])(\\d+\\.?\\d*)([*/])([-])(\\d+\\.?\\d*)");
         matcher = pattern.matcher(expresion);
         while (matcher.find()) {
-            System.out.println("Expresión: " + expresion); // imprime el proceso de la expresión, opcional
+            //System.out.println("Expresión: " + expresion); // imprime el proceso de la expresión, opcional
             String operador0 = matcher.group(1);
             double valor1 = Double.parseDouble(matcher.group(2));
             String operador = matcher.group(3);
@@ -70,7 +70,7 @@ public class OperacionesBasicas{
         pattern = Pattern.compile("(\\d+\\.?\\d*)([*/])([-])(\\d+\\.?\\d*)");
         matcher = pattern.matcher(expresion);
         while (matcher.find()) {
-            System.out.println("Expresión: " + expresion); // imprime el proceso de la expresión, opcional
+            //System.out.println("Expresión: " + expresion); // imprime el proceso de la expresión, opcional
             String operador0 = "";
             double valor1 = Double.parseDouble(matcher.group(1));
             String operador = matcher.group(2);
@@ -86,7 +86,7 @@ public class OperacionesBasicas{
         pattern = Pattern.compile("([-])(\\d+\\.?\\d*)([+-])([-])(\\d+\\.?\\d*)");
         matcher = pattern.matcher(expresion);
         while (matcher.find()) {
-            System.out.println("Expresión: " + expresion); // imprime el proceso de la expresión, opcional
+            //System.out.println("Expresión: " + expresion); // imprime el proceso de la expresión, opcional
             String operador0 = "-";
             double valor1 = Double.parseDouble(matcher.group(2));
             String operador = matcher.group(3);
@@ -102,7 +102,7 @@ public class OperacionesBasicas{
         pattern = Pattern.compile("(\\d+\\.?\\d*)([+-])([-])(\\d+\\.?\\d*)");
         matcher = pattern.matcher(expresion);
         while (matcher.find()) {
-            System.out.println("Expresión: " + expresion); // imprime el proceso de la expresión, opcional
+            //System.out.println("Expresión: " + expresion); // imprime el proceso de la expresión, opcional
             String operador0 = "";
             double valor1 = Double.parseDouble(matcher.group(1));
             String operador = matcher.group(2);
@@ -118,7 +118,7 @@ public class OperacionesBasicas{
         pattern = Pattern.compile("([-])(\\d+\\.?\\d*)([+-])(\\d+\\.?\\d*)");
         matcher = pattern.matcher(expresion);
         while (matcher.find()) {
-            System.out.println("Expresión: " + expresion); // imprime el proceso de la expresión, opcional
+            //System.out.println("Expresión: " + expresion); // imprime el proceso de la expresión, opcional
             String operador0 = "-";
             double valor1 = Double.parseDouble(matcher.group(2));
             String operador = matcher.group(3);
@@ -134,7 +134,7 @@ public class OperacionesBasicas{
         pattern = Pattern.compile("(\\d+\\.?\\d*)([+-])(\\d+\\.?\\d*)");
         matcher = pattern.matcher(expresion);
         while (matcher.find()) {
-            System.out.println("Expresión: " + expresion); // imprime el proceso de la expresión, opcional
+            //System.out.println("Expresión: " + expresion); // imprime el proceso de la expresión, opcional
             String operador0 = "";
             double valor1 = Double.parseDouble(matcher.group(1));
             String operador = matcher.group(2);
