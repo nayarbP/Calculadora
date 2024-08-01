@@ -161,7 +161,7 @@ public class OperacionesBasicas{
                     return -valor1 * valor2;
                 case "/":
                     if (valor2 == 0) {
-                        System.out.println("No se puede dividir por cero.");
+                        System.out.println("No se puede dividir por cero. ERROR");
                         return Double.NaN;
                     }
                     return  -valor1 / valor2;
