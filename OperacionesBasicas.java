@@ -226,7 +226,7 @@ public class OperacionesBasicas{
                     }
                     return  valor1 / valor2;
                 default:
-                    throw new IllegalArgumentException("Operador no soportado: " + operador);
+                    throw new IllegalArgumentException("Operador no permitido: " + operador);
             }
         }  
     }
