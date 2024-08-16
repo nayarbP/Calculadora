@@ -1,5 +1,5 @@
 # Calculadora
-# Descripcion
+## Descripcion
 Este es un proyecto de desarrollo de una calculadora que incluye las operaciones básicas: suma, resta, multiplicación y división. 
 
 ## Integrantes
