@@ -385,6 +385,7 @@ public class Interface extends javax.swing.JFrame {
     }
 
     private void btn_RetrocesoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_RetrocesoActionPerformed
+        //Arreglar diseño
         txt_Operacion.setText("");
         txt_Resultado.setText("");
     }//GEN-LAST:event_btn_RetrocesoActionPerformed
