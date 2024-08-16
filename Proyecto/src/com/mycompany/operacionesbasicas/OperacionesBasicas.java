@@ -2,6 +2,10 @@ package com.mycompany.operacionesbasicas;
 //Librerias para trabajar con una lista de caracteres por patrones de busqueda
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class OperacionesBasicas{
     //Función main provisional
