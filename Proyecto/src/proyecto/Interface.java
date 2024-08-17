@@ -32,7 +32,6 @@ public class Interface extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel3 = new javax.swing.JPanel();
-        Igual = new javax.swing.JButton();
         btn_0 = new javax.swing.JButton();
         btn_6 = new javax.swing.JButton();
         btn_4 = new javax.swing.JButton();
@@ -53,6 +52,7 @@ public class Interface extends javax.swing.JFrame {
         btn_Multiplicacion = new javax.swing.JButton();
         btn_Resta = new javax.swing.JButton();
         btn_Suma = new javax.swing.JButton();
+        btn_Igual = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -60,22 +60,6 @@ public class Interface extends javax.swing.JFrame {
         jPanel3.setBackground(new java.awt.Color(255, 255, 255));
         jPanel3.setMinimumSize(new java.awt.Dimension(200, 200));
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        Igual.setFont(new java.awt.Font("Rockwell Extra Bold", 1, 24)); // NOI18N
-        Igual.setForeground(new java.awt.Color(255, 255, 255));
-        Igual.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/btn3.png"))); // NOI18N
-        Igual.setText("=");
-        Igual.setBorderPainted(false);
-        Igual.setFocusPainted(false);
-        Igual.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        Igual.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/btn1.png"))); // NOI18N
-        Igual.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/btn1_pressed.png"))); // NOI18N
-        Igual.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                IgualActionPerformed(evt);
-            }
-        });
-        jPanel3.add(Igual, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 410, 50, 50));
 
         btn_0.setFont(new java.awt.Font("Rockwell Extra Bold", 1, 12)); // NOI18N
         btn_0.setForeground(new java.awt.Color(55, 62, 71));
@@ -367,6 +351,21 @@ public class Interface extends javax.swing.JFrame {
         });
         jPanel3.add(btn_Suma, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 350, 70, 50));
 
+        btn_Igual.setBackground(new java.awt.Color(0, 0, 0));
+        btn_Igual.setFont(new java.awt.Font("Rockwell Extra Bold", 1, 14)); // NOI18N
+        btn_Igual.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/btnigual.png"))); // NOI18N
+        btn_Igual.setText("=");
+        btn_Igual.setFocusPainted(false);
+        btn_Igual.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btn_Igual.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/btnigual.png"))); // NOI18N
+        btn_Igual.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/btnigualpre.png"))); // NOI18N
+        btn_Igual.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_IgualActionPerformed(evt);
+            }
+        });
+        jPanel3.add(btn_Igual, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 410, 70, 50));
+
         getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 330, 470));
 
         pack();
@@ -384,20 +383,6 @@ public class Interface extends javax.swing.JFrame {
         }
         return formattedResult;
     }
-
-    private void IgualActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_IgualActionPerformed
-        try {
-            String operacion = txt_Operacion.getText().replaceAll("\\s+", ""); 
-            double resultado = OperacionesBasicas.calcularexpresion(operacion);
-            if (!Double.isNaN(resultado)) {
-                txt_Resultado.setText(formatResult(resultado));
-            } else {
-                txt_Resultado.setText("Error");
-            }
-        } catch (Exception e) {
-            txt_Resultado.setText("Error: " + e.getMessage());
-        }
-    }//GEN-LAST:event_IgualActionPerformed
 
     private void btn_0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_0ActionPerformed
         txt_Operacion.setText(txt_Operacion.getText() + "0");
@@ -477,6 +462,21 @@ public class Interface extends javax.swing.JFrame {
         txt_Operacion.setText(txt_Operacion.getText() + " + "); 
     }//GEN-LAST:event_btn_SumaActionPerformed
 
+    private void btn_IgualActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_IgualActionPerformed
+        // Arreglado Boton Igual 
+        try { 
+            String operacion = txt_Operacion.getText().replaceAll("\\s+", "");  
+            double resultado = OperacionesBasicas.calcularexpresion(operacion); 
+            if (!Double.isNaN(resultado)) { 
+                txt_Resultado.setText(formatResult(resultado)); 
+            } else { 
+                txt_Resultado.setText("Error"); 
+            } 
+        } catch (Exception e) { 
+            txt_Resultado.setText("Error: " + e.getMessage()); 
+        } 
+    }//GEN-LAST:event_btn_IgualActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -512,7 +512,6 @@ public class Interface extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton Igual;
     private javax.swing.JButton btn_0;
     private javax.swing.JButton btn_1;
     private javax.swing.JButton btn_2;
@@ -524,6 +523,7 @@ public class Interface extends javax.swing.JFrame {
     private javax.swing.JButton btn_9;
     private javax.swing.JButton btn_Borrar;
     private javax.swing.JButton btn_Division;
+    private javax.swing.JButton btn_Igual;
     private javax.swing.JButton btn_Multiplicacion;
     private javax.swing.JButton btn_Recorrer;
     private javax.swing.JButton btn_Resta;
