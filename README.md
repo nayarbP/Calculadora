@@ -12,7 +12,7 @@ Este es un proyecto de desarrollo de una calculadora que incluye las operaciones
 - Stalyn Quispe (líder)
 - Steeven Flores
 ### Interfaz
-- Nayely Camally (líder)
+- Nayely Camalli (líder)
 - Franklin Hallo
 #### Operaciones
 - Antony Yanchatuñá (líder)
