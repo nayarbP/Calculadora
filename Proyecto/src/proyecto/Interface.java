@@ -32,7 +32,6 @@ public class Interface extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel3 = new javax.swing.JPanel();
-        btn_Retroceso = new javax.swing.JButton();
         btn_Borrar = new javax.swing.JButton();
         btn_Division = new javax.swing.JButton();
         btn_Multiplicacion = new javax.swing.JButton();
@@ -53,6 +52,7 @@ public class Interface extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         txt_Operacion = new javax.swing.JLabel();
         txt_Resultado = new javax.swing.JLabel();
+        btn_Retroceso = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -60,22 +60,6 @@ public class Interface extends javax.swing.JFrame {
         jPanel3.setBackground(new java.awt.Color(255, 255, 255));
         jPanel3.setMinimumSize(new java.awt.Dimension(200, 200));
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        btn_Retroceso.setFont(new java.awt.Font("Rockwell Extra Bold", 1, 12)); // NOI18N
-        btn_Retroceso.setForeground(new java.awt.Color(55, 62, 71));
-        btn_Retroceso.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/btn1.png"))); // NOI18N
-        btn_Retroceso.setText("CE");
-        btn_Retroceso.setBorderPainted(false);
-        btn_Retroceso.setFocusPainted(false);
-        btn_Retroceso.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        btn_Retroceso.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/btn1.png"))); // NOI18N
-        btn_Retroceso.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/btn1_pressed.png"))); // NOI18N
-        btn_Retroceso.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_RetrocesoActionPerformed(evt);
-            }
-        });
-        jPanel3.add(btn_Retroceso, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 170, 110, 50));
 
         btn_Borrar.setFont(new java.awt.Font("Rockwell Extra Bold", 1, 12)); // NOI18N
         btn_Borrar.setForeground(new java.awt.Color(55, 62, 71));
@@ -349,22 +333,39 @@ public class Interface extends javax.swing.JFrame {
         });
         jPanel3.add(btn_3, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 350, 50, 50));
 
-        jPanel1.setBackground(new java.awt.Color(244, 253, 251));
+        jPanel1.setBackground(new java.awt.Color(51, 51, 51));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        txt_Operacion.setFont(new java.awt.Font("Rockwell Extra Bold", 1, 18)); // NOI18N
-        txt_Operacion.setForeground(new java.awt.Color(55, 62, 71));
+        txt_Operacion.setBackground(new java.awt.Color(51, 51, 51));
+        txt_Operacion.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        txt_Operacion.setForeground(new java.awt.Color(204, 204, 204));
         txt_Operacion.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         txt_Operacion.setText("2+2");
         jPanel1.add(txt_Operacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 210, 54));
 
-        txt_Resultado.setFont(new java.awt.Font("Rockwell Extra Bold", 1, 36)); // NOI18N
-        txt_Resultado.setForeground(new java.awt.Color(55, 62, 71));
+        txt_Resultado.setFont(new java.awt.Font("Rockwell Extra Bold", 1, 48)); // NOI18N
+        txt_Resultado.setForeground(new java.awt.Color(255, 255, 255));
         txt_Resultado.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         txt_Resultado.setText("4");
         jPanel1.add(txt_Resultado, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 80, 220, 61));
 
         jPanel3.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 250, 160));
+
+        btn_Retroceso.setFont(new java.awt.Font("Rockwell Extra Bold", 0, 12)); // NOI18N
+        btn_Retroceso.setForeground(new java.awt.Color(255, 255, 255));
+        btn_Retroceso.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/btn.png"))); // NOI18N
+        btn_Retroceso.setText("CE");
+        btn_Retroceso.setBorderPainted(false);
+        btn_Retroceso.setFocusPainted(false);
+        btn_Retroceso.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btn_Retroceso.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/btn.png"))); // NOI18N
+        btn_Retroceso.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/BTN_PRE1.png"))); // NOI18N
+        btn_Retroceso.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_RetrocesoActionPerformed(evt);
+            }
+        });
+        jPanel3.add(btn_Retroceso, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 170, 70, 50));
 
         getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 250, 470));
 
@@ -383,11 +384,6 @@ public class Interface extends javax.swing.JFrame {
         }
         return formattedResult;
     }
-
-    private void btn_RetrocesoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_RetrocesoActionPerformed
-        txt_Operacion.setText("");
-        txt_Resultado.setText("");
-    }//GEN-LAST:event_btn_RetrocesoActionPerformed
 
     private void btn_BorrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_BorrarActionPerformed
         String operacion = txt_Operacion.getText();
@@ -469,6 +465,12 @@ public class Interface extends javax.swing.JFrame {
     private void btn_3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_3ActionPerformed
         txt_Operacion.setText(txt_Operacion.getText() + "3");
     }//GEN-LAST:event_btn_3ActionPerformed
+
+    private void btn_RetrocesoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_RetrocesoActionPerformed
+          // Diseño Arreglado
+          txt_Operacion.setText(""); 
+          txt_Resultado.setText(""); 
+    }//GEN-LAST:event_btn_RetrocesoActionPerformed
 
     /**
      * @param args the command line arguments
