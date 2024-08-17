@@ -32,11 +32,7 @@ public class Interface extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel3 = new javax.swing.JPanel();
-        btn_Multiplicacion = new javax.swing.JButton();
-        btn_Resta = new javax.swing.JButton();
-        btn_Suma = new javax.swing.JButton();
         Igual = new javax.swing.JButton();
-        btn_7 = new javax.swing.JButton();
         btn_0 = new javax.swing.JButton();
         btn_6 = new javax.swing.JButton();
         btn_4 = new javax.swing.JButton();
@@ -54,6 +50,9 @@ public class Interface extends javax.swing.JFrame {
         btn_Retroceso = new javax.swing.JButton();
         btn_Recorrer = new javax.swing.JButton();
         btn_Division = new javax.swing.JButton();
+        btn_Multiplicacion = new javax.swing.JButton();
+        btn_Resta = new javax.swing.JButton();
+        btn_Suma = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -61,54 +60,6 @@ public class Interface extends javax.swing.JFrame {
         jPanel3.setBackground(new java.awt.Color(255, 255, 255));
         jPanel3.setMinimumSize(new java.awt.Dimension(200, 200));
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        btn_Multiplicacion.setFont(new java.awt.Font("Rockwell Extra Bold", 1, 12)); // NOI18N
-        btn_Multiplicacion.setForeground(new java.awt.Color(55, 62, 71));
-        btn_Multiplicacion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/btn1.png"))); // NOI18N
-        btn_Multiplicacion.setText("x");
-        btn_Multiplicacion.setBorderPainted(false);
-        btn_Multiplicacion.setFocusPainted(false);
-        btn_Multiplicacion.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        btn_Multiplicacion.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/btn1.png"))); // NOI18N
-        btn_Multiplicacion.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/btn1_pressed.png"))); // NOI18N
-        btn_Multiplicacion.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_MultiplicacionActionPerformed(evt);
-            }
-        });
-        jPanel3.add(btn_Multiplicacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 230, 50, 50));
-
-        btn_Resta.setFont(new java.awt.Font("Rockwell Extra Bold", 1, 12)); // NOI18N
-        btn_Resta.setForeground(new java.awt.Color(55, 62, 71));
-        btn_Resta.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/btn1.png"))); // NOI18N
-        btn_Resta.setText("-");
-        btn_Resta.setBorderPainted(false);
-        btn_Resta.setFocusPainted(false);
-        btn_Resta.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        btn_Resta.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/btn1.png"))); // NOI18N
-        btn_Resta.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/btn1_pressed.png"))); // NOI18N
-        btn_Resta.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_RestaActionPerformed(evt);
-            }
-        });
-        jPanel3.add(btn_Resta, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 290, 50, 50));
-
-        btn_Suma.setFont(new java.awt.Font("Rockwell Extra Bold", 1, 12)); // NOI18N
-        btn_Suma.setForeground(new java.awt.Color(55, 62, 71));
-        btn_Suma.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/btn1.png"))); // NOI18N
-        btn_Suma.setText("+");
-        btn_Suma.setBorderPainted(false);
-        btn_Suma.setFocusPainted(false);
-        btn_Suma.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        btn_Suma.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/btn1.png"))); // NOI18N
-        btn_Suma.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/btn1_pressed.png"))); // NOI18N
-        btn_Suma.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_SumaActionPerformed(evt);
-            }
-        });
-        jPanel3.add(btn_Suma, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 350, 50, 50));
 
         Igual.setFont(new java.awt.Font("Rockwell Extra Bold", 1, 24)); // NOI18N
         Igual.setForeground(new java.awt.Color(255, 255, 255));
@@ -125,22 +76,6 @@ public class Interface extends javax.swing.JFrame {
             }
         });
         jPanel3.add(Igual, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 410, 50, 50));
-
-        btn_7.setFont(new java.awt.Font("Rockwell Extra Bold", 1, 12)); // NOI18N
-        btn_7.setForeground(new java.awt.Color(55, 62, 71));
-        btn_7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/btn2.png"))); // NOI18N
-        btn_7.setText("7");
-        btn_7.setBorderPainted(false);
-        btn_7.setFocusPainted(false);
-        btn_7.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        btn_7.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/btn1.png"))); // NOI18N
-        btn_7.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/btn1_pressed.png"))); // NOI18N
-        btn_7.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_7ActionPerformed(evt);
-            }
-        });
-        jPanel3.add(btn_7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 230, 50, 50));
 
         btn_0.setFont(new java.awt.Font("Rockwell Extra Bold", 1, 12)); // NOI18N
         btn_0.setForeground(new java.awt.Color(55, 62, 71));
@@ -220,7 +155,7 @@ public class Interface extends javax.swing.JFrame {
                 btn_8ActionPerformed(evt);
             }
         });
-        jPanel3.add(btn_8, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 230, 50, 50));
+        jPanel3.add(btn_8, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 230, 50, 50));
 
         btn_5.setFont(new java.awt.Font("Rockwell Extra Bold", 1, 12)); // NOI18N
         btn_5.setForeground(new java.awt.Color(55, 62, 71));
@@ -384,6 +319,54 @@ public class Interface extends javax.swing.JFrame {
         });
         jPanel3.add(btn_Division, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 170, 70, 50));
 
+        btn_Multiplicacion.setFont(new java.awt.Font("Rockwell Extra Bold", 0, 12)); // NOI18N
+        btn_Multiplicacion.setForeground(new java.awt.Color(255, 255, 255));
+        btn_Multiplicacion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/btn.png"))); // NOI18N
+        btn_Multiplicacion.setText("x");
+        btn_Multiplicacion.setBorderPainted(false);
+        btn_Multiplicacion.setFocusPainted(false);
+        btn_Multiplicacion.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btn_Multiplicacion.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/btn.png"))); // NOI18N
+        btn_Multiplicacion.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/BTN_PRE1.png"))); // NOI18N
+        btn_Multiplicacion.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_MultiplicacionActionPerformed(evt);
+            }
+        });
+        jPanel3.add(btn_Multiplicacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 230, 70, 50));
+
+        btn_Resta.setFont(new java.awt.Font("Rockwell Extra Bold", 0, 12)); // NOI18N
+        btn_Resta.setForeground(new java.awt.Color(255, 255, 255));
+        btn_Resta.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/btn.png"))); // NOI18N
+        btn_Resta.setText("-");
+        btn_Resta.setBorderPainted(false);
+        btn_Resta.setFocusPainted(false);
+        btn_Resta.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btn_Resta.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/btn.png"))); // NOI18N
+        btn_Resta.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/BTN_PRE1.png"))); // NOI18N
+        btn_Resta.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_RestaActionPerformed(evt);
+            }
+        });
+        jPanel3.add(btn_Resta, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 290, 70, 50));
+
+        btn_Suma.setFont(new java.awt.Font("Rockwell Extra Bold", 0, 12)); // NOI18N
+        btn_Suma.setForeground(new java.awt.Color(255, 255, 255));
+        btn_Suma.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/btn.png"))); // NOI18N
+        btn_Suma.setText("+");
+        btn_Suma.setBorderPainted(false);
+        btn_Suma.setFocusPainted(false);
+        btn_Suma.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btn_Suma.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/btn.png"))); // NOI18N
+        btn_Suma.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/BTN_PRE1.png"))); // NOI18N
+        btn_Suma.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_SumaActionPerformed(evt);
+            }
+        });
+        jPanel3.add(btn_Suma, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 350, 70, 50));
+
         getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 330, 470));
 
         pack();
@@ -402,18 +385,6 @@ public class Interface extends javax.swing.JFrame {
         return formattedResult;
     }
 
-    private void btn_MultiplicacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_MultiplicacionActionPerformed
-        txt_Operacion.setText(txt_Operacion.getText() + " * ");
-    }//GEN-LAST:event_btn_MultiplicacionActionPerformed
-
-    private void btn_RestaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_RestaActionPerformed
-        txt_Operacion.setText(txt_Operacion.getText() + " - ");
-    }//GEN-LAST:event_btn_RestaActionPerformed
-
-    private void btn_SumaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_SumaActionPerformed
-        txt_Operacion.setText(txt_Operacion.getText() + " + ");
-    }//GEN-LAST:event_btn_SumaActionPerformed
-
     private void IgualActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_IgualActionPerformed
         try {
             String operacion = txt_Operacion.getText().replaceAll("\\s+", ""); 
@@ -427,10 +398,6 @@ public class Interface extends javax.swing.JFrame {
             txt_Resultado.setText("Error: " + e.getMessage());
         }
     }//GEN-LAST:event_IgualActionPerformed
-
-    private void btn_7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_7ActionPerformed
-        txt_Operacion.setText(txt_Operacion.getText() + "7");
-    }//GEN-LAST:event_btn_7ActionPerformed
 
     private void btn_0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_0ActionPerformed
         txt_Operacion.setText(txt_Operacion.getText() + "0");
@@ -495,6 +462,21 @@ public class Interface extends javax.swing.JFrame {
         txt_Operacion.setText(txt_Operacion.getText() + " / "); 
     }//GEN-LAST:event_btn_DivisionActionPerformed
 
+    private void btn_MultiplicacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_MultiplicacionActionPerformed
+        // Arreglado Boton Multiplicacion
+        txt_Operacion.setText(txt_Operacion.getText() + " * "); 
+    }//GEN-LAST:event_btn_MultiplicacionActionPerformed
+
+    private void btn_RestaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_RestaActionPerformed
+        // Arreglado Boton Resta   
+        txt_Operacion.setText(txt_Operacion.getText() + " - "); 
+    }//GEN-LAST:event_btn_RestaActionPerformed
+
+    private void btn_SumaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_SumaActionPerformed
+        // Arreglado Boton Suma  
+        txt_Operacion.setText(txt_Operacion.getText() + " + "); 
+    }//GEN-LAST:event_btn_SumaActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -538,7 +520,6 @@ public class Interface extends javax.swing.JFrame {
     private javax.swing.JButton btn_4;
     private javax.swing.JButton btn_5;
     private javax.swing.JButton btn_6;
-    private javax.swing.JButton btn_7;
     private javax.swing.JButton btn_8;
     private javax.swing.JButton btn_9;
     private javax.swing.JButton btn_Borrar;
