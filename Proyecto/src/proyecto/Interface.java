@@ -32,7 +32,6 @@ public class Interface extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel3 = new javax.swing.JPanel();
-        btn_Borrar = new javax.swing.JButton();
         btn_Division = new javax.swing.JButton();
         btn_Multiplicacion = new javax.swing.JButton();
         btn_Resta = new javax.swing.JButton();
@@ -52,6 +51,7 @@ public class Interface extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         txt_Operacion = new javax.swing.JLabel();
         txt_Resultado = new javax.swing.JLabel();
+        btn_Borrar = new javax.swing.JButton();
         btn_Retroceso = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -60,22 +60,6 @@ public class Interface extends javax.swing.JFrame {
         jPanel3.setBackground(new java.awt.Color(255, 255, 255));
         jPanel3.setMinimumSize(new java.awt.Dimension(200, 200));
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        btn_Borrar.setFont(new java.awt.Font("Rockwell Extra Bold", 1, 12)); // NOI18N
-        btn_Borrar.setForeground(new java.awt.Color(55, 62, 71));
-        btn_Borrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/btn1.png"))); // NOI18N
-        btn_Borrar.setText("C");
-        btn_Borrar.setBorderPainted(false);
-        btn_Borrar.setFocusPainted(false);
-        btn_Borrar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        btn_Borrar.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/btn1.png"))); // NOI18N
-        btn_Borrar.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/btn1_pressed.png"))); // NOI18N
-        btn_Borrar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_BorrarActionPerformed(evt);
-            }
-        });
-        jPanel3.add(btn_Borrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 170, 50, 50));
 
         btn_Division.setFont(new java.awt.Font("Rockwell Extra Bold", 1, 12)); // NOI18N
         btn_Division.setForeground(new java.awt.Color(55, 62, 71));
@@ -351,6 +335,22 @@ public class Interface extends javax.swing.JFrame {
 
         jPanel3.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 250, 160));
 
+        btn_Borrar.setFont(new java.awt.Font("Rockwell Extra Bold", 0, 12)); // NOI18N
+        btn_Borrar.setForeground(new java.awt.Color(255, 255, 255));
+        btn_Borrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/btn.png"))); // NOI18N
+        btn_Borrar.setText("C");
+        btn_Borrar.setBorderPainted(false);
+        btn_Borrar.setFocusPainted(false);
+        btn_Borrar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btn_Borrar.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/btn.png"))); // NOI18N
+        btn_Borrar.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/BTN_PRE1.png"))); // NOI18N
+        btn_Borrar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_BorrarActionPerformed(evt);
+            }
+        });
+        jPanel3.add(btn_Borrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 170, 70, 50));
+
         btn_Retroceso.setFont(new java.awt.Font("Rockwell Extra Bold", 0, 12)); // NOI18N
         btn_Retroceso.setForeground(new java.awt.Color(255, 255, 255));
         btn_Retroceso.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/btn.png"))); // NOI18N
@@ -384,13 +384,6 @@ public class Interface extends javax.swing.JFrame {
         }
         return formattedResult;
     }
-
-    private void btn_BorrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_BorrarActionPerformed
-        String operacion = txt_Operacion.getText();
-    if (operacion.length() > 0) {
-        txt_Operacion.setText(operacion.substring(0, operacion.length() - 1));
-    }
-    }//GEN-LAST:event_btn_BorrarActionPerformed
 
     private void btn_DivisionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_DivisionActionPerformed
         txt_Operacion.setText(txt_Operacion.getText() + " / ");
@@ -466,10 +459,18 @@ public class Interface extends javax.swing.JFrame {
         txt_Operacion.setText(txt_Operacion.getText() + "3");
     }//GEN-LAST:event_btn_3ActionPerformed
 
+    private void btn_BorrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_BorrarActionPerformed
+          // Arregalo Boton Borrar
+            String operacion = txt_Operacion.getText(); 
+    if (operacion.length() > 0) { 
+        txt_Operacion.setText(operacion.substring(0, operacion.length() - 1)); 
+    }            
+    }//GEN-LAST:event_btn_BorrarActionPerformed
+
     private void btn_RetrocesoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_RetrocesoActionPerformed
-          // Diseño Arreglado
-          txt_Operacion.setText(""); 
-          txt_Resultado.setText(""); 
+       // Arreglado Boton Retroceso
+        txt_Operacion.setText(""); 
+        txt_Resultado.setText("");
     }//GEN-LAST:event_btn_RetrocesoActionPerformed
 
     /**
