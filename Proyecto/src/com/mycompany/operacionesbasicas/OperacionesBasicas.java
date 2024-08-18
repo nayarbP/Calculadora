@@ -8,7 +8,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class OperacionesBasicas{
-    //Anthony-----------------------------------------------------------------------------------------------
     public static double calcularexpresion(String expresion){
         // Aquí se tomará el string de operaciones y se llevarán a las funciones correspondientes
         String signo = "+"; // Signo necesario para multiplicación y división con valores negativos
@@ -72,7 +71,6 @@ public class OperacionesBasicas{
             expresion = expresion.substring(0, matcher.start()) + resultado + expresion.substring(matcher.end());//Remplaza los valores utilizados en la operacion por el valor resultante
             matcher = pattern.matcher(expresion);//busca coincidencias del nuevo string con el patron anterior
         }
-        //Steeven-----------------------------------------------------------------------------------------------
         // Luego evaluamos las sumas y restas, con valor1 y valor2 negativos
                 // Evaluamos sumas y restas cuando tanto valor1 como valor2 son negativos
         pattern = Pattern.compile("([-])(\\d+\\.?\\d*)([+-])([-])(\\d+\\.?\\d*)");
@@ -136,7 +134,6 @@ public class OperacionesBasicas{
         return Double.parseDouble(expresion); // Retorna el resultado final como un número de tipo double
     }
     
-    //Ivan_Solis-----------------------------------------------------------------------------------------------
     // Aquí se realiza la operación tomando en cuenta los signos y en funcion a los valores asignados
     public static double realizarOperacion(String operador0, double valor1, String operador, String operador1, double valor2){
         // Evaluamos con valor1 negativo
