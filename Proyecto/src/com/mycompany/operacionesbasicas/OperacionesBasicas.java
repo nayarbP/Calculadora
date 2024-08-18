@@ -72,68 +72,70 @@ public class OperacionesBasicas{
             expresion = expresion.substring(0, matcher.start()) + resultado + expresion.substring(matcher.end());//Remplaza los valores utilizados en la operacion por el valor resultante
             matcher = pattern.matcher(expresion);//busca coincidencias del nuevo string con el patron anterior
         }
-        //Steven-----------------------------------------------------------------------------------------------
+        //Steeven-----------------------------------------------------------------------------------------------
         // Luego evaluamos las sumas y restas, con valor1 y valor2 negativos
+                // Evaluamos sumas y restas cuando tanto valor1 como valor2 son negativos
         pattern = Pattern.compile("([-])(\\d+\\.?\\d*)([+-])([-])(\\d+\\.?\\d*)");
         matcher = pattern.matcher(expresion);
         while (matcher.find()) {
-            String operador0 = "-";
-            double valor1 = Double.parseDouble(matcher.group(2));
-            String operador = matcher.group(3);
-            String operador1 = "-";
-            double valor2 = Double.parseDouble(matcher.group(5));
-            double resultado = realizarOperacion(operador0, valor1, operador, operador1, valor2);
-            if (Double.isNaN(resultado)) return Double.NaN;
-            expresion = expresion.substring(0, matcher.start()) + resultado + expresion.substring(matcher.end());
-            matcher = pattern.matcher(expresion);
+            String operador0 = "-"; // Asigna el operador "-" para el primer valor
+            double valor1 = Double.parseDouble(matcher.group(2)); // Captura el primer número
+            String operador = matcher.group(3); // Captura el operador (+ o -)
+            String operador1 = "-"; // Asigna el operador "-" para el segundo valor
+            double valor2 = Double.parseDouble(matcher.group(5)); // Captura el segundo número
+            double resultado = realizarOperacion(operador0, valor1, operador, operador1, valor2); // Realiza la operación
+            if (Double.isNaN(resultado)) return Double.NaN; // Si el resultado no es un número, retorna NaN
+            expresion = expresion.substring(0, matcher.start()) + resultado + expresion.substring(matcher.end()); // Reemplaza la expresión con el resultado
+            matcher = pattern.matcher(expresion); // Vuelve a evaluar la expresión
         }
         
-        // Evaluamos las sumas y restas, con valor2 negativo
+        // Evaluamos sumas y restas cuando valor2 es negativo
         pattern = Pattern.compile("(\\d+\\.?\\d*)([+-])([-])(\\d+\\.?\\d*)");
         matcher = pattern.matcher(expresion);
         while (matcher.find()) {
-            String operador0 = "";
-            double valor1 = Double.parseDouble(matcher.group(1));
-            String operador = matcher.group(2);
-            String operador1 = "-";
-            double valor2 = Double.parseDouble(matcher.group(4));
-            double resultado = realizarOperacion(operador0, valor1, operador, operador1, valor2);
-            if (Double.isNaN(resultado)) return Double.NaN;
-            expresion = expresion.substring(0, matcher.start()) + resultado + expresion.substring(matcher.end());
-            matcher = pattern.matcher(expresion);
+            String operador0 = ""; // Sin operador para el primer valor (positivo)
+            double valor1 = Double.parseDouble(matcher.group(1)); // Captura el primer número
+            String operador = matcher.group(2); // Captura el operador (+ o -)
+            String operador1 = "-"; // Asigna el operador "-" para el segundo valor
+            double valor2 = Double.parseDouble(matcher.group(4)); // Captura el segundo número
+            double resultado = realizarOperacion(operador0, valor1, operador, operador1, valor2); // Realiza la operación
+            if (Double.isNaN(resultado)) return Double.NaN; // Si el resultado no es un número, retorna NaN
+            expresion = expresion.substring(0, matcher.start()) + resultado + expresion.substring(matcher.end()); // Reemplaza la expresión con el resultado
+            matcher = pattern.matcher(expresion); // Vuelve a evaluar la expresión
         }
         
-        // Evaluamos las sumas y restas, con valor1 negativo
+        // Evaluamos sumas y restas cuando valor1 es negativo
         pattern = Pattern.compile("([-])(\\d+\\.?\\d*)([+-])(\\d+\\.?\\d*)");
         matcher = pattern.matcher(expresion);
         while (matcher.find()) {
-            String operador0 = "-";
-            double valor1 = Double.parseDouble(matcher.group(2));
-            String operador = matcher.group(3);
-            String operador1 = "";
-            double valor2 = Double.parseDouble(matcher.group(4));
-            double resultado = realizarOperacion(operador0, valor1, operador, operador1, valor2);
-            if (Double.isNaN(resultado)) return Double.NaN;
-            expresion = expresion.substring(0, matcher.start()) + resultado + expresion.substring(matcher.end());
-            matcher = pattern.matcher(expresion);
+            String operador0 = "-"; // Asigna el operador "-" para el primer valor
+            double valor1 = Double.parseDouble(matcher.group(2)); // Captura el primer número
+            String operador = matcher.group(3); // Captura el operador (+ o -)
+            String operador1 = ""; // Sin operador para el segundo valor (positivo)
+            double valor2 = Double.parseDouble(matcher.group(4)); // Captura el segundo número
+            double resultado = realizarOperacion(operador0, valor1, operador, operador1, valor2); // Realiza la operación
+            if (Double.isNaN(resultado)) return Double.NaN; // Si el resultado no es un número, retorna NaN
+            expresion = expresion.substring(0, matcher.start()) + resultado + expresion.substring(matcher.end()); // Reemplaza la expresión con el resultado
+            matcher = pattern.matcher(expresion); // Vuelve a evaluar la expresión
         }
 
-        // Evaluamos las sumas y restas, con valor1 y valor2 positivos
+        // Evaluamos sumas y restas cuando tanto valor1 como valor2 son positivos
         pattern = Pattern.compile("(\\d+\\.?\\d*)([+-])(\\d+\\.?\\d*)");
         matcher = pattern.matcher(expresion);
         while (matcher.find()) {
-            String operador0 = "";
-            double valor1 = Double.parseDouble(matcher.group(1));
-            String operador = matcher.group(2);
-            String operador1 = "";
-            double valor2 = Double.parseDouble(matcher.group(3));
-            double resultado = realizarOperacion(operador0, valor1, operador, operador1, valor2);
-            if (Double.isNaN(resultado)) return Double.NaN;
-            expresion = expresion.substring(0, matcher.start()) + resultado + expresion.substring(matcher.end());
-            matcher = pattern.matcher(expresion);
+            String operador0 = ""; // Sin operador para el primer valor (positivo)
+            double valor1 = Double.parseDouble(matcher.group(1)); // Captura el primer número
+            String operador = matcher.group(2); // Captura el operador (+ o -)
+            String operador1 = ""; // Sin operador para el segundo valor (positivo)
+            double valor2 = Double.parseDouble(matcher.group(3)); // Captura el segundo número
+            double resultado = realizarOperacion(operador0, valor1, operador, operador1, valor2); // Realiza la operación
+            if (Double.isNaN(resultado)) return Double.NaN; // Si el resultado no es un número, retorna NaN
+            expresion = expresion.substring(0, matcher.start()) + resultado + expresion.substring(matcher.end()); // Reemplaza la expresión con el resultado
+            matcher = pattern.matcher(expresion); // Vuelve a evaluar la expresión
         }
-        return Double.parseDouble(expresion);
+        return Double.parseDouble(expresion); // Retorna el resultado final como un número de tipo double
     }
+    
     //Ivan_Solis-----------------------------------------------------------------------------------------------
     // Aquí se realiza la operación tomando en cuenta los signos y en funcion a los valores asignados
     public static double realizarOperacion(String operador0, double valor1, String operador, String operador1, double valor2){
