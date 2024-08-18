@@ -134,8 +134,8 @@ public class OperacionesBasicas{
         }
         return Double.parseDouble(expresion);
     }
-    //Ivan-----------------------------------------------------------------------------------------------
-    // Aquí se realiza la operación tomando en cuenta los signos
+    //Ivan_Solis-----------------------------------------------------------------------------------------------
+    // Aquí se realiza la operación tomando en cuenta los signos y en funcion a los valores asignados
     public static double realizarOperacion(String operador0, double valor1, String operador, String operador1, double valor2){
         // Evaluamos con valor1 negativo
         if(operador0.equals("-") && operador1.equals("")){
@@ -147,6 +147,7 @@ public class OperacionesBasicas{
                 case "*":
                     return -valor1 * valor2;
                 case "/":
+                    //En caso de que valor2 sea cero y se busque dividir se ejecuta este mensaje de error
                     if (valor2 == 0) {
                         System.out.println("No se puede dividir por cero. ERROR");
                         return Double.NaN;
@@ -167,6 +168,7 @@ public class OperacionesBasicas{
                 case "*":
                     return valor1 * -valor2;
                 case "/":
+                     //En caso de que valor2 sea cero y se busque dividir se ejecuta este mensaje de error
                     if (valor2 == 0) {
                         System.out.println("No se puede dividir por cero.");
                         return Double.NaN;
@@ -187,6 +189,7 @@ public class OperacionesBasicas{
                 case "*":
                     return valor1 * valor2;
                 case "/":
+                     //En caso de que valor2 sea cero y se busque dividir se ejecuta este mensaje de error
                     if (valor2 == 0) {
                         System.out.println("No se puede dividir por cero.");
                         return Double.NaN;
@@ -207,6 +210,7 @@ public class OperacionesBasicas{
                 case "*":
                     return valor1 * valor2;
                 case "/":
+                     //En caso de que valor2 sea cero y se busque dividir se ejecuta este mensaje de error
                     if (valor2 == 0) {
                         System.out.println("No se puede dividir por cero.");
                         return Double.NaN;
@@ -218,3 +222,4 @@ public class OperacionesBasicas{
         }  
     }
 }
+//Para los 4 casos entre las operaciones se toman en cuenta la ubicación de signo en el valor y se ejecuta de manera clara la operacion correspondiente
