@@ -8,16 +8,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class OperacionesBasicas{
-    //Función main provisional
-    /*public static void main(String [] args){
-        //String expresion = "operacion a resolver";
-        String expresion = "5+34/4-4/0";
-        double resultado = calcularexpresion(expresion);
-        if (!Double.isNaN(resultado)) {
-            System.out.println("Resultado: " + resultado);
-        }
-    }*/
-  
     public static double calcularexpresion(String expresion){
         // Aquí se tomará el string de operaciones y se llevarán a las funciones correspondientes
         String signo = "+"; // Signo necesario para multiplicación y división con valores negativos
