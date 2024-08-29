@@ -69,18 +69,16 @@ public class Interface extends javax.swing.JFrame {
         txt_Operacion.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
         txt_Operacion.setForeground(new java.awt.Color(204, 204, 204));
         txt_Operacion.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        txt_Operacion.setText("2+2");
         jPanel1.add(txt_Operacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 290, 54));
 
-        txt_Resultado.setFont(new java.awt.Font("Rockwell Extra Bold", 1, 48)); // NOI18N
+        txt_Resultado.setFont(new java.awt.Font("Arial", 1, 48)); // NOI18N
         txt_Resultado.setForeground(new java.awt.Color(255, 255, 255));
         txt_Resultado.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        txt_Resultado.setText("4");
         jPanel1.add(txt_Resultado, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 80, 310, 61));
 
         jPanel3.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 330, 160));
 
-        btn_Borrar.setFont(new java.awt.Font("Rockwell Extra Bold", 0, 12)); // NOI18N
+        btn_Borrar.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         btn_Borrar.setForeground(new java.awt.Color(255, 255, 255));
         btn_Borrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/btn.png"))); // NOI18N
         btn_Borrar.setText("C");
@@ -96,7 +94,7 @@ public class Interface extends javax.swing.JFrame {
         });
         jPanel3.add(btn_Borrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 170, 70, 50));
 
-        btn_Retroceso.setFont(new java.awt.Font("Rockwell Extra Bold", 0, 12)); // NOI18N
+        btn_Retroceso.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         btn_Retroceso.setForeground(new java.awt.Color(255, 255, 255));
         btn_Retroceso.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/btn.png"))); // NOI18N
         btn_Retroceso.setText("CE");
@@ -112,7 +110,7 @@ public class Interface extends javax.swing.JFrame {
         });
         jPanel3.add(btn_Retroceso, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 170, 70, 50));
 
-        btn_Recorrer.setFont(new java.awt.Font("Rockwell Extra Bold", 0, 12)); // NOI18N
+        btn_Recorrer.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         btn_Recorrer.setForeground(new java.awt.Color(255, 255, 255));
         btn_Recorrer.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/btn.png"))); // NOI18N
         btn_Recorrer.setText("<-");
@@ -128,7 +126,7 @@ public class Interface extends javax.swing.JFrame {
         });
         jPanel3.add(btn_Recorrer, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 170, 70, 50));
 
-        btn_Division.setFont(new java.awt.Font("Rockwell Extra Bold", 0, 12)); // NOI18N
+        btn_Division.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         btn_Division.setForeground(new java.awt.Color(255, 255, 255));
         btn_Division.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/btn.png"))); // NOI18N
         btn_Division.setText("/");
@@ -144,7 +142,7 @@ public class Interface extends javax.swing.JFrame {
         });
         jPanel3.add(btn_Division, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 170, 70, 50));
 
-        btn_Multiplicacion.setFont(new java.awt.Font("Rockwell Extra Bold", 0, 12)); // NOI18N
+        btn_Multiplicacion.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         btn_Multiplicacion.setForeground(new java.awt.Color(255, 255, 255));
         btn_Multiplicacion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/btn.png"))); // NOI18N
         btn_Multiplicacion.setText("x");
@@ -160,7 +158,7 @@ public class Interface extends javax.swing.JFrame {
         });
         jPanel3.add(btn_Multiplicacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 230, 70, 50));
 
-        btn_Resta.setFont(new java.awt.Font("Rockwell Extra Bold", 0, 12)); // NOI18N
+        btn_Resta.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         btn_Resta.setForeground(new java.awt.Color(255, 255, 255));
         btn_Resta.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/btn.png"))); // NOI18N
         btn_Resta.setText("-");
@@ -176,7 +174,7 @@ public class Interface extends javax.swing.JFrame {
         });
         jPanel3.add(btn_Resta, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 290, 70, 50));
 
-        btn_Suma.setFont(new java.awt.Font("Rockwell Extra Bold", 0, 12)); // NOI18N
+        btn_Suma.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         btn_Suma.setForeground(new java.awt.Color(255, 255, 255));
         btn_Suma.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/btn.png"))); // NOI18N
         btn_Suma.setText("+");
@@ -193,7 +191,7 @@ public class Interface extends javax.swing.JFrame {
         jPanel3.add(btn_Suma, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 350, 70, 50));
 
         btn_Igual.setBackground(new java.awt.Color(204, 204, 204));
-        btn_Igual.setFont(new java.awt.Font("Rockwell Extra Bold", 1, 14)); // NOI18N
+        btn_Igual.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         btn_Igual.setText("=");
         btn_Igual.setFocusPainted(false);
         btn_Igual.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -206,7 +204,7 @@ public class Interface extends javax.swing.JFrame {
         });
         jPanel3.add(btn_Igual, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 410, 150, 50));
 
-        btn_7.setFont(new java.awt.Font("Rockwell Extra Bold", 1, 12)); // NOI18N
+        btn_7.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         btn_7.setForeground(new java.awt.Color(255, 255, 255));
         btn_7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/btn_numeros.png"))); // NOI18N
         btn_7.setText("7");
@@ -222,7 +220,7 @@ public class Interface extends javax.swing.JFrame {
         });
         jPanel3.add(btn_7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 230, 70, 50));
 
-        btn_8.setFont(new java.awt.Font("Rockwell Extra Bold", 1, 12)); // NOI18N
+        btn_8.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         btn_8.setForeground(new java.awt.Color(255, 255, 255));
         btn_8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/btn_numeros.png"))); // NOI18N
         btn_8.setText("8");
@@ -238,7 +236,7 @@ public class Interface extends javax.swing.JFrame {
         });
         jPanel3.add(btn_8, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 230, 70, 50));
 
-        btn_9.setFont(new java.awt.Font("Rockwell Extra Bold", 1, 12)); // NOI18N
+        btn_9.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         btn_9.setForeground(new java.awt.Color(255, 255, 255));
         btn_9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/btn_numeros.png"))); // NOI18N
         btn_9.setText("9");
@@ -254,7 +252,7 @@ public class Interface extends javax.swing.JFrame {
         });
         jPanel3.add(btn_9, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 230, 70, 50));
 
-        btn_4.setFont(new java.awt.Font("Rockwell Extra Bold", 1, 12)); // NOI18N
+        btn_4.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         btn_4.setForeground(new java.awt.Color(255, 255, 255));
         btn_4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/btn_numeros.png"))); // NOI18N
         btn_4.setText("4");
@@ -270,7 +268,7 @@ public class Interface extends javax.swing.JFrame {
         });
         jPanel3.add(btn_4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 290, 70, 50));
 
-        btn_5.setFont(new java.awt.Font("Rockwell Extra Bold", 1, 12)); // NOI18N
+        btn_5.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         btn_5.setForeground(new java.awt.Color(255, 255, 255));
         btn_5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/btn_numeros.png"))); // NOI18N
         btn_5.setText("5");
@@ -286,7 +284,7 @@ public class Interface extends javax.swing.JFrame {
         });
         jPanel3.add(btn_5, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 290, 70, 50));
 
-        btn_6.setFont(new java.awt.Font("Rockwell Extra Bold", 1, 12)); // NOI18N
+        btn_6.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         btn_6.setForeground(new java.awt.Color(255, 255, 255));
         btn_6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/btn_numeros.png"))); // NOI18N
         btn_6.setText("6");
@@ -302,7 +300,7 @@ public class Interface extends javax.swing.JFrame {
         });
         jPanel3.add(btn_6, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 290, 70, 50));
 
-        btn_1.setFont(new java.awt.Font("Rockwell Extra Bold", 1, 12)); // NOI18N
+        btn_1.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         btn_1.setForeground(new java.awt.Color(255, 255, 255));
         btn_1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/btn_numeros.png"))); // NOI18N
         btn_1.setText("1");
@@ -318,7 +316,7 @@ public class Interface extends javax.swing.JFrame {
         });
         jPanel3.add(btn_1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 350, 70, 50));
 
-        btn_2.setFont(new java.awt.Font("Rockwell Extra Bold", 1, 12)); // NOI18N
+        btn_2.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         btn_2.setForeground(new java.awt.Color(255, 255, 255));
         btn_2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/btn_numeros.png"))); // NOI18N
         btn_2.setText("2");
@@ -334,7 +332,7 @@ public class Interface extends javax.swing.JFrame {
         });
         jPanel3.add(btn_2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 350, 70, 50));
 
-        btn_3.setFont(new java.awt.Font("Rockwell Extra Bold", 1, 12)); // NOI18N
+        btn_3.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         btn_3.setForeground(new java.awt.Color(255, 255, 255));
         btn_3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/btn_numeros.png"))); // NOI18N
         btn_3.setText("3");
@@ -350,7 +348,7 @@ public class Interface extends javax.swing.JFrame {
         });
         jPanel3.add(btn_3, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 350, 70, 50));
 
-        btn_0.setFont(new java.awt.Font("Rockwell Extra Bold", 1, 12)); // NOI18N
+        btn_0.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         btn_0.setForeground(new java.awt.Color(255, 255, 255));
         btn_0.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/btn_numeros.png"))); // NOI18N
         btn_0.setText("0");
@@ -366,7 +364,7 @@ public class Interface extends javax.swing.JFrame {
         });
         jPanel3.add(btn_0, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 410, 70, 50));
 
-        btn_punto.setFont(new java.awt.Font("Rockwell Extra Bold", 1, 12)); // NOI18N
+        btn_punto.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         btn_punto.setForeground(new java.awt.Color(255, 255, 255));
         btn_punto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/btn_numeros.png"))); // NOI18N
         btn_punto.setText(".");
@@ -425,7 +423,7 @@ public class Interface extends javax.swing.JFrame {
 
     private void btn_MultiplicacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_MultiplicacionActionPerformed
         // Arreglado Boton Multiplicacion
-        txt_Operacion.setText(txt_Operacion.getText() + " * "); 
+        txt_Operacion.setText(txt_Operacion.getText() + " x "); 
     }//GEN-LAST:event_btn_MultiplicacionActionPerformed
 
     private void btn_RestaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_RestaActionPerformed
